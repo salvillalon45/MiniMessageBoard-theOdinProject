@@ -6,14 +6,17 @@
 	</head>
 	<body>
 		<h1><%= title %></h1>
-		<p>Welcome to <%= title %></p>
-		<p><a href="/new">Add New Message</a></p>
 
-		<% for (var i = 0; i < messages.length; i++) { %>
-		<p>User: <%= messages[i]['user'] %></p>
-		<p>Added: <%= messages[i]['added'] %></p>
-		<p>text: <%= messages[i]['text'] %></p>
+		<p><a href="/new">Add New Message</a></p>
 		<hr />
-		<% } %>
+
+		<div class="messageContainer">
+			<% for (var i = 0; i < messages.length; i++) { %>
+			<p><b>User:</b> <%= messages[i]['user'] %></p>
+			<p><b>Added:</b> <%= messages[i]['added'] %></p>
+			<p><b>text:</b> <%= messages[i]['text'] %></p>
+			<hr />
+			<% } %>
+		</div>
 	</body>
 </html>

@@ -5,16 +5,31 @@
 		<link rel="stylesheet" href="/stylesheets/style.css" />
 	</head>
 	<body>
-		<h2>Enter a message!</h2>
-		<p><a href="/">Go Back</a></p>
+		<div class="introContainer">
+			<h1>Enter a message!</h1>
+			<p>
+				<a href="/">Go Back</a>
+			</p>
+		</div>
+
 		<form method="POST" action="/new">
-			<label for="user">Your Name</label>
-			<input type="text" id="user" name="user" />
+			<div class="inputContainer">
+				<b>
+					<label for="user">Your Name</label>
+				</b>
+				<input type="text" id="user" name="user" />
+			</div>
 
-			<label for="text">Your Message</label>
-			<input type="text" id="text" name="text" />
+			<div class="inputContainer">
+				<b>
+					<label for="text">Your Message</label>
+				</b>
+				<input type="text" id="text" name="text" />
+			</div>
 
-			<button type="submit">Submit</button>
+			<div class="buttonContainer">
+				<button type="submit">Submit</button>
+			</div>
 		</form>
 	</body>
 </html>
