@@ -1,6 +1,6 @@
 # theOdinProject-MiniMessageBoard
 
-[The Odin Project: Javascript] - Project: Final Project
+[The Odin Project: Node] - Project: Mini Message Board
 
 ## Intro
 
